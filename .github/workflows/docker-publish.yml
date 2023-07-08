@@ -42,3 +42,10 @@ jobs:
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG db/
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          
+         # Docker build command
+         #docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
+         #docker build -t $ECR_REGISTRY/$SQL_REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .     
+         #docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+         #docker push $ECR_REGISTRY/$SQL_REPOSITORY:$IMAGE_TAG
+        
