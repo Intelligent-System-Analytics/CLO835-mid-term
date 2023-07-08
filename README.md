@@ -1,11 +1,13 @@
 # Install the required MySQL package
 
-sudo apt-get update -y
-sudo apt-get install mysql-client -y
+sudo yum update -y
+
+sudo yum install mysql-client -y
 
 # Running application locally
 pip3 install -r requirements.txt
 sudo python3 app.py
+
 # Building and running 2 tier web application locally
 ### Building mysql docker image 
 ```docker build -t my_db -f Dockerfile_mysql . ```
@@ -41,3 +43,5 @@ export APP_COLOR=blue
 ```docker run -p 8080:8080  -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD  my_app```
 
 ```docker run --name blue_app -d -p 8081:8080 -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD  APP_COLOR=$APP_COLOR color_app_a1```
+
+
