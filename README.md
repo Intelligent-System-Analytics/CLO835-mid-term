@@ -1,10 +1,10 @@
 # Install the required MySQL package
 
 sudo yum update -y
-
 sudo yum install mysql-client -y
 
 # Running application locally
+cd CLO835-Assignment2/
 pip3 install -r requirements.txt
 sudo python3 app.py
 
