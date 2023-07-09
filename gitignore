@@ -28,6 +28,7 @@ terraform.rc
 crash.log
 
 # Keys
+nila-key
 nila-key*
 *.pub
 

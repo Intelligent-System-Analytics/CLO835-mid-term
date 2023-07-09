@@ -19,12 +19,12 @@ spec:
       - name: DBPWD
         valueFrom:
           secretKeyRef:
-            name: db-credentials
+            name: mysql-credentials
             key: password
       - name: DBUSER
         valueFrom:
           secretKeyRef:
-            name: db-credentials
+            name: mysql-credentials
             key: user
       - name: APP_COLOR
         value: "blue"
