@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: 009147451403.dkr.ecr.us-east-1.amazonaws.com/prod-app:6491ac94a7b01e0286f7e2c630ef41fcb67aeca2
+    image: 277875007842.dkr.ecr.us-east-1.amazonaws.com/my-app:v0.2
     env:
       - name: DBHOST
         value: "10.244.0.5"
